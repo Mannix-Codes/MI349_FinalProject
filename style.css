@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    position: sticky;
+    display:flex;
+    justify-content: baseline;
+    align-items: baseline;
+    background-color: #335c67;
+}
+
+
+h1 {
+    color: #E09F3E;
+    font-family: 'Direction';
+    text-shadow: -10px 0px #000000;
+}
+
+
+header h1 {
+    font-size: 64px;
+}
