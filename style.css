@@ -4,7 +4,13 @@
     box-sizing: border-box;
 }
 
-
+a {
+    text-decoration: none;
+}
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 header {
     display:flex;
@@ -54,8 +60,18 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    color: white;
+    font-family: 'Direction';
+    text-shadow: -10px 0px black;
+    font-size: 50pt;
+    padding: 80px;
+    letter-spacing: 2px;
+    width: 55%;
+}
+
 p {
-    font-family: 'Valeria Round', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 20pt;
 }
 
@@ -68,6 +84,7 @@ strong {
 
 #fire-image {
     width: 31%;
+    height: 62%;
     padding: 10px;
 }
 
@@ -76,6 +93,42 @@ strong {
     height: 120px;
     width: 120px;
 }
+
+#signature-image {
+    float: right;
+}
+
+#Projects-Bar {
+  display:flex;
+  background-color: #E09F3E;
+  justify-content: center;
+  align-items: center ;
+  padding: 30px;
+}
+
+#church-image {
+    background-image: url(church.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #540b0d7e;
+    background-blend-mode: multiply;
+
+    width: 563px;
+    height: 354px;
+    padding: 50px;
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    font-size: 40pt;
+    text-decoration: none;
+} 
 
 header a {
     color: white;
@@ -98,6 +151,11 @@ header a {
   display: flex;
 }
 
+.subtitle {
+    text-align: center;
+
+}
+
 @media screen and (min-width: 300px) {
   header {
     display: block;
@@ -111,6 +169,16 @@ header a {
   #logo {
     display: none;
   }
+  #fire-image {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+  .intro-bar {
+    display: block;
+  }
+
 
 }
 
@@ -121,6 +189,13 @@ header a {
   header ul li {
     display: inline-block;
     border-top: none;
+  }
+  #fire-image {
+    width: 31%;
+    height: 62%;
+  }
+  .intro-bar {
+    display: flex;
   }
 }
 
