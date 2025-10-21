@@ -65,11 +65,33 @@ h4 {
     font-family: 'Direction';
     text-shadow: -10px 0px black;
     font-size: 50pt;
-    padding: 80px;
     letter-spacing: 2px;
-    width: 55%;
+    width: 40%;
 }
 
+h4.red {
+    color:#540b0e;
+    text-shadow: none;
+    font-size: 64pt;
+}
+
+h4.white {
+    color: white;
+    text-shadow: none;
+    font-size: 64pt;
+}
+
+h4.yellow {
+    color:#E09F3E;
+    text-shadow: none;
+    font-size: 64pt;
+}
+
+h4.black {
+    color: black;
+    text-shadow: none;
+    font-size: 64pt;
+}
 p {
     font-family: 'Varela Round', sans-serif;
     font-size: 20pt;
@@ -96,6 +118,7 @@ strong {
 
 #signature-image {
     float: right;
+    padding: 20px;
 }
 
 #Projects-Bar {
@@ -129,6 +152,51 @@ strong {
     font-size: 40pt;
     text-decoration: none;
 } 
+
+
+#Resume-Bar {
+  display:flex;
+  flex-direction: row-reverse;
+  gap: 10%;
+  background-color: #9e2a2b;
+  justify-content: center;
+  align-items: center ;
+  padding: 30px;
+}
+
+#resume-button {
+  
+    background-color: #E09F3E;
+    color: #335c67;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30pt;
+    padding: 30px 140px;
+    border-radius: 15px;
+}
+
+#social-bar {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-line {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+}
+
+footer {
+    background-color: #335c67;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+}
 
 header a {
     color: white;
@@ -179,7 +247,51 @@ header a {
     display: block;
   }
 
+  #Projects-Bar {
+    display: block;
+  }
 
+  #Resume-Bar {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #church-image {
+    margin: auto;
+    display: block;
+    width: 80%;
+    height: auto;
+  }
+
+  h4, h4.red, h4.white, h4.yellow{
+    margin: auto;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+
+  h4.red, h4.white, h4.yellow{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  #signature-image {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+
+  #resume-button {
+    padding: 20px 80px;
+    font-size: 24pt;
+    align-self: center;
+    place-self: center;
+  }
+
+  #social-bar {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -196,6 +308,42 @@ header a {
   }
   .intro-bar {
     display: flex;
+  }
+  #logo {
+    display: none;
+  }
+  #Projects-Bar {
+    display: flex
+  }
+
+  #Resume-Bar {
+    display: flex;
+  }
+
+  #church-image {
+    margin: auto;
+    display: block;
+    width: 563px;
+    height: 354px;
+  }
+
+  #signature-image {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+  #social-bar {
+    display: flex;
+  }
+
+  .social-line {
+    justify-content: left;
+  }
+  h4.red, h4.white, h4.yellow, h4.black {
+    text-align: left;
+    margin: 0;
+    padding:0;
+    width: auto;
   }
 }
 
