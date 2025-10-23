@@ -4,12 +4,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: normal;
 }
                 
 
 a {
     text-decoration: none;
 }
+
+.blank-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 section {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -43,7 +51,7 @@ h1, h2{
 
 h2 {
     font-size: 64pt;
-    text-shadow: -16px 0px #540b0e;
+    text-shadow: -14px 0px #540b0e;
     text-align: center;
     padding-top: 80px;
 }
@@ -51,7 +59,7 @@ h2 {
 
 header h1 {
     font-size: 40pt;
-    text-shadow: -10px 0px #540b0e;
+    text-shadow: -8px 0px #540b0e;
 }
 
 h3 {
@@ -66,10 +74,9 @@ h3 {
 h4 {
     color: white;
     font-family: 'Direction';
-    text-shadow: -10px 0px black;
+    text-shadow: -8px 0px black;
     font-size: 50pt;
     letter-spacing: 2px;
-    width: 40%;
 }
 
 h4.red {
@@ -142,7 +149,7 @@ strong {
 
     width: 563px;
     height: 354px;
-    padding: 50px;
+    padding: 80px 50px;
 
     border-radius: 15px;
 
@@ -150,21 +157,26 @@ strong {
     align-items: center;
     justify-content: center;
 
-    font-family: 'Varela Round', sans-serif;
+
+} 
+
+#church-image p {
+  font-family: 'Varela Round', sans-serif;
     color: white;
     font-size: 40pt;
     text-decoration: none;
-} 
+    text-align: center;
+
+}
 
 
 #Resume-Bar {
   display:flex;
   flex-direction: row-reverse;
-  gap: 10%;
   background-color: #9e2a2b;
   justify-content: center;
   align-items: center ;
-  padding: 30px;
+  gap: 20%;
 }
 
 #resume-button {
@@ -264,6 +276,10 @@ header a {
     height: auto;
   }
 
+  .question {
+    width: 50%;
+  }
+
   h4, h4.red, h4.white, h4.yellow{
     margin: auto;
     text-align: left;
@@ -284,7 +300,6 @@ header a {
 
   #resume-button {
     padding: 20px 80px;
-    font-size: 24pt;
     align-self: center;
     place-self: center;
   }
@@ -318,14 +333,10 @@ header a {
 
   #Resume-Bar {
     display: flex;
-    gap: 30%;
   }
 
   #church-image {
-    margin: auto;
     display: block;
-    width: 563px;
-    height: 354px;
   }
 
   #signature-image {
