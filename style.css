@@ -7,14 +7,12 @@
     font-weight: normal;
 }
                 
-
 a {
     text-decoration: none;
 }
-
-.blank-link {
-    text-decoration: none;
-    color: inherit;
+a.Blank-Link {
+  width: 50%;
+  text-decoration: none;
 }
 
 
@@ -281,7 +279,6 @@ header a {
   }
 
   h4, h4.red, h4.white, h4.yellow{
-    margin: auto;
     text-align: left;
     padding-bottom: 20px;
   }
@@ -353,7 +350,7 @@ header a {
   }
   h4.red, h4.white, h4.yellow, h4.black {
     text-align: left;
-    margin: 0;
+    margin: none;
     padding:0;
     width: auto;
   }
