@@ -276,6 +276,7 @@ header a {
 
   .question {
     width: 50%;
+    margin-left:5%;
   }
 
   h4, h4.red, h4.white, h4.yellow{
