@@ -138,7 +138,7 @@ strong {
 }
 
 #church-image {
-    background-image: url(church.png);
+    background-image: url(../images/photos/church.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
