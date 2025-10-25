@@ -1,0 +1,108 @@
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #335c67;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding: 20px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+#Projects-Bar {
+  display:flex;
+  background-color: #E09F3E;
+  justify-content: space-between;
+  align-items: center ;
+  padding: 30px;
+}
+
+#Resume-Bar {
+  display:flex;
+  flex-direction: row-reverse;
+  background-color: #9e2a2b;
+  justify-content: center;
+  align-items: center ;
+  gap: 20%;
+}
+
+#resume-button {
+  
+    background-color: #E09F3E;
+    color: #335c67;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30pt;
+    border-radius: 22px;
+}
+
+#social-bar {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    height:auto;
+    margin: auto;
+}
+.experience-block {
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+.social-line {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+}
+
+footer {
+    background-color: #335c67;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.namelogo {
+    display: flex;
+    align-items: center;
+
+}
+
+.intro-text {
+    padding: 40px;
+}
+
+.intro-bar {
+  display: flex;
+}
+
+.subtitle {
+    text-align: center;
+
+}
