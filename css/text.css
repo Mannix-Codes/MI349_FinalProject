@@ -44,9 +44,8 @@ h3 {
 }
 
 h4 {
-    color: white;
+    color: #335c67;
     font-family: 'Direction';
-    text-shadow: -8px 0px black;
     font-size: 50pt;
     letter-spacing: 2px;
 }
@@ -74,11 +73,34 @@ h4.black {
     text-shadow: none;
     font-size: 64pt;
 }
+
+h4.black-small {
+    color: black;
+    text-shadow: none;
+    font-size: 40pt;
+}
+h4.white-small {
+    color: white;
+    text-shadow: none;
+    font-size: 40pt;
+}
 p {
     font-family: 'Varela Round', sans-serif;
     font-size: 20pt;
+    line-height: 1.5;
 }
 
+.white-text {
+    color: white;
+}
+
+.indented-text {
+    text-indent: 40px;
+}
+
+.centered {
+    text-align: center;
+}
 strong {
     color: #9e2a2b;
     font-family: 'Direction';

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberHazard</title>
+        <title>Projects</title>
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="icon" type="image/png" href="/images/photos/logo.png">
+</head>
+<body>
+    <header>
+        <div class="namelogo">
+            <img src="/images/photos/logo.png" alt="Logo" id="logo">
+            <a href="../index.html"><h1>Mannix Gabriel Muir</h1></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>CyberHazard</h3>
+        <section class="project-row">
+            <div>
+                <h4 class="black-small">Project Overview</h4>
+                <p>Cyberhazard is the game me and the members of team DuckDuckGo created for the spartasoft September 2024 GameJam. I was a programmer and audio designer for my team</p>
+                <ul>
+                    <li>-Unity</li>
+                    <li>-C#</li>
+                    <li>-FL Studio</li>
+                    <li>-Adobe Audition</li>
+                </ul>
+            </div>
+            <video controls>
+                <source src="/videos/Cyberhazard1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section class="project-row-reverse" id="dark-red">
+            <div>
+                <h4 class="white-small centered">The Player Controller</h4>
+                <p class="white-text indented-text">The Player Controller
+                The player controller for cyberhazard posed a unique challenge. As opposed to a standard player controller that works with a gravity source I needed to create a controller that works in zero gravity. Initially I used the WASD key bindings to manually move the player which worked, however it didn't feel as smooth or realistic as the team liked. This lead me to shift to a momentum based movement system.</p>
+                <p class="white-text indented-text">With the newer system even if a player releases a key they continue to follow the path that their momentum would take. Additionally the force applied to the player now gradually increases to give the effect of a player speeding up and slowing down. To ensure that players cannot go infinitely faster I also implemented a terminal velocity. When it came to implementing up/down movement the strategy was similar to WASD, I just mapped a similar axis to the Shift, and Spacebar Keys.</p>
+                <p class="white-text indented-text">The team also wanted to implement a rolling mechanic to allow the player to re-orient themselves. For this in stead of the standard movement method I used the same method that I used for the camera movement. Rather than basing it off of values from the mouse position I used the Q and E buttons to allow for rolling.</p>
+            </div>
+            <video controls>
+                <source src="/videos/Cyberhazard2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+    </main>
+</body>
+</html>
