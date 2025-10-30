@@ -152,7 +152,9 @@ footer {
 }
 
 .project-itemD {
-    background-color: #335c67;
+    background-image: url(/images/photos/Desktop349.png);
+    background-position: center;
+    background-size: cover;
     grid-column-start: first;
     grid-column-end: span third;
     grid-row-start: row3;
@@ -161,7 +163,9 @@ footer {
 }
 
 .project-itemE {
-    background-color: #9e2a2b;
+    background-image: url(/images/photos/figmaprototype.png);
+    background-position: center;
+    background-size: cover;
     grid-column-start: third;
     grid-column-end: span fifth;
     grid-row-start: row3;
@@ -190,7 +194,7 @@ footer {
 }
 .projects-grid:has(.project-itemC:hover) {
     grid-template-columns: [first] 1fr [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 2fr [end];
-    grid-template-rows: [row1] 200px [row2] 200px [row3] 200px [row3] 100px [last];
+    grid-template-rows: [row1] 200px [row2] 200px [row3] 100px [row3] 100px [last];
 }
 
 .projects-grid:has(.project-itemD:hover) {
@@ -236,10 +240,13 @@ video {
 }
 
 img.video-wrapper {
-    width: 100%;
-    height: auto;
-    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 0;
+    min-height: 0;
 }
+
+
 
 .project-textblock.left {
     grid-column-start: 1;
