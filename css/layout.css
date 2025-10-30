@@ -170,7 +170,9 @@ footer {
 }
 
 .project-itemF {
-    background-color: #E09F3E;
+    background-image: url(/images/photos/Otapperscreen.png);
+    background-position: center;
+    background-size: cover;
     grid-column-start: fifth;
     grid-column-end: span end;
     grid-row-start: row3;
