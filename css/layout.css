@@ -116,7 +116,10 @@ footer {
     grid-template-rows: [row1] 100px [row2] 200px [row3] 200px [row3] 100px [last];
 }
 .project-itemA {
-    background-color: #9e2a2b;
+    
+    background-image: url(/images/photos/Poster1.png);
+    background-position: center;
+    background-size: cover;
     grid-column-start: first;
     grid-column-end: span third;
     grid-row-start: row1;
@@ -128,7 +131,9 @@ footer {
     
 .project-itemB {
     transition: 500ms;
-    background-color: #E09F3E;
+    background-image: url(/images/photos/cyberhazardHUD.png);
+    background-position: center;
+    background-size: cover;
     grid-column-start: third;
     grid-column-end: span fifth;
     grid-row-start: row1;
@@ -136,7 +141,9 @@ footer {
     border-radius: 22px;
 }
 .project-itemC {
-    background-color: #335c67;
+    background-image: url(/images/photos/Impact-Episode.png);
+    background-position: center;
+    background-size: cover;
     grid-column-start: fifth;
     grid-column-end: span end;
     grid-row-start: row1;
@@ -209,54 +216,50 @@ video {
 .projects-page-grid {
     display: grid;
     gap: 10px;
+    padding: 20px;
     grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
 }
 
 .project-textblock {
     margin: 20px;
+    align-content: center;
 }
 
 .video-wrapper {
     margin: 20px;
+    min-width: 0;
+    min-height: 0;
+    align-content: center;
+}
+
+img.video-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 0;
 }
 
 .project-textblock.left {
     grid-column-start: 1;
     grid-column-end: 4;
-
 }
-.project-textblock.leftbig {
+
+.video-wrapper.left {
     grid-column-start: 1;
-    grid-column-end: 5;
-
-}
-.project-textblock.right {
-    grid-column-start: 4;
-    grid-column-end: end;
-
-}
-.project-textblock.rigtbig {
-    grid-column-start: 2;
-    grid-column-end: 6;
-
+    grid-column-end: span 3;
 }
 
 .video-wrapper.right {
     grid-column-start: 4;
     grid-column-end: end;
 }
-.video-wrapper.left {
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-.video-wrapper.rightsmall {
-    grid-column-start: 5;
+
+.project-textblock.right {
+    grid-column-start: 4;
     grid-column-end: end;
+
 }
-.video-wrapper.leftsmall {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
+
 
 
 
@@ -267,13 +270,13 @@ video {
     font-size: 22pt;
 }
 
-#light-red {
+.light-red {
     background-color: #9e2a2b;
 }
 .dark-red {
     background-color: #540b0e;
 }
 
-.yellow {
+section.yellow {
     background-color: #E09F3E;
 }

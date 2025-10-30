@@ -46,48 +46,50 @@ h3 {
 h4 {
     color: #335c67;
     font-family: 'Direction';
-    font-size: 50pt;
+    font-size: 64pt;
     letter-spacing: 2px;
 }
 
 h4.red {
     color:#540b0e;
-    text-shadow: none;
-    font-size: 64pt;
 }
-
-h4.white {
+.blue {
+    color: #335c67;
+}
+.white {
     color: white;
-    text-shadow: none;
-    font-size: 64pt;
 }
 
 h4.yellow {
     color:#E09F3E;
-    text-shadow: none;
-    font-size: 64pt;
 }
 
-h4.black {
+.black {
     color: black;
-    text-shadow: none;
-    font-size: 64pt;
 }
 
-h4.black-small {
-    color: black;
-    text-shadow: none;
+.small {
+    text-align: center;
     font-size: 40pt;
 }
-h4.white-small {
-    color: white;
-    text-shadow: none;
-    font-size: 40pt;
-}
-p {
+
+p{
     font-family: 'Varela Round', sans-serif;
     font-size: 20pt;
     line-height: 1.5;
+}
+
+u{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30pt;
+    line-height: 1.5;
+    padding: 30px;
+    padding-collapse: separate;
+    display: inline-block;
+}
+
+.hide {
+    display: none;
 }
 
 .white-text {
@@ -105,7 +107,7 @@ strong {
     color: #9e2a2b;
     font-family: 'Direction';
     letter-spacing: 2px;
-    font-size: 22pt;
+    font-size: 30pt;
 }
 
 .intro-text p {
