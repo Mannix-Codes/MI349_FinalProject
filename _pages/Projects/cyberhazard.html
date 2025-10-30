@@ -12,7 +12,7 @@
     <header>
         <div class="namelogo">
             <img src="/images/photos/logo.png" alt="Logo" id="logo">
-            <a href="../index.html"><h1>Mannix Gabriel Muir</h1></a>
+            <a href="/index.html"><h1>Mannix Gabriel Muir</h1></a>
         </div>
         <nav>
             <ul>
@@ -25,8 +25,8 @@
     </header>
     <main>
         <h3>CyberHazard</h3>
-        <section class="project-row">
-            <div>
+        <section class="projects-page-grid">
+            <div class="project-textblock left">
                 <h4 class="black-small">Project Overview</h4>
                 <p>Cyberhazard is the game me and the members of team DuckDuckGo created for the spartasoft September 2024 GameJam. I was a programmer and audio designer for my team</p>
                 <ul>
@@ -36,12 +36,30 @@
                     <li>-Adobe Audition</li>
                 </ul>
             </div>
-            <video controls>
-                <source src="/videos/Cyberhazard1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="video-wrapper right">
+                <video controls>
+                    <source src="/videos/Cyberhazard1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </section>
-        <section class="project-row-reverse" id="dark-red">
+        <section class="projects-page-grid">
+            <div class="project-textblock right">
+                <h4 class="black-small centered">The Player Controller</h4>
+                <p class="indented-text">The Player Controller
+                The player controller for cyberhazard posed a unique challenge. As opposed to a standard player controller that works with a gravity source I needed to create a controller that works in zero gravity. Initially I used the WASD key bindings to manually move the player which worked, however it didn't feel as smooth or realistic as the team liked. This lead me to shift to a momentum based movement system.</p>
+                <p class="indented-text">With the newer system even if a player releases a key they continue to follow the path that their momentum would take. Additionally the force applied to the player now gradually increases to give the effect of a player speeding up and slowing down. To ensure that players cannot go infinitely faster I also implemented a terminal velocity. When it came to implementing up/down movement the strategy was similar to WASD, I just mapped a similar axis to the Shift, and Spacebar Keys.</p>
+                <p class="indented-text">The team also wanted to implement a rolling mechanic to allow the player to re-orient themselves. For this in stead of the standard movement method I used the same method that I used for the camera movement. Rather than basing it off of values from the mouse position I used the Q and E buttons to allow for rolling.</p>
+            </div>
+            <div class="video-wrapper left">
+                <video controls>
+                    <source src="/videos/Cyberhazard2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+        <!--
+        <section class="project-row-reverse dark-red">
             <div>
                 <h4 class="white-small centered">The Player Controller</h4>
                 <p class="white-text indented-text">The Player Controller
@@ -49,10 +67,34 @@
                 <p class="white-text indented-text">With the newer system even if a player releases a key they continue to follow the path that their momentum would take. Additionally the force applied to the player now gradually increases to give the effect of a player speeding up and slowing down. To ensure that players cannot go infinitely faster I also implemented a terminal velocity. When it came to implementing up/down movement the strategy was similar to WASD, I just mapped a similar axis to the Shift, and Spacebar Keys.</p>
                 <p class="white-text indented-text">The team also wanted to implement a rolling mechanic to allow the player to re-orient themselves. For this in stead of the standard movement method I used the same method that I used for the camera movement. Rather than basing it off of values from the mouse position I used the Q and E buttons to allow for rolling.</p>
             </div>
-            <video controls>
-                <source src="/videos/Cyberhazard2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="video-container">
+                <video controls>
+                    <source src="/videos/Cyberhazard2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+        <section class="project-row">
+            <div>
+                <h4 class="black-small centered">UI Design</h4>
+                <p> On this project I was in charge of designing and implementing all of the UI, but I would like to highlight the Heads Up Display (HUD). I designed the HUD with information that's useful to the player while not providing too much information, and remaining dynamic. Working with the UI gave me a better understanding of unity's canvas system and how to code with it in general. The HUD can be seen in the gameplay video above. </p>
+            </div>
+            <img src="/images/photos/cyberhazardHUD.png" class="Cyberhazard HUD Screenshot">
+        </section>
+        <section class="project-row yellow">
+            <div>
+                <h4 class="white-small centered">Where I Succeeded</h4>
+                <p class="centered">This project taught me a lot about working in a team, using version control and pushing code. My team was very good at helping each other out to get the desired outcome and create the game we made.</p>
+            </div>
+            <div>
+                <h4 class="black-small centered centered">Where I Can Improve</h4>
+                <p class="centered">In future projects I hope I am able to take a larger role in the team, I was relatively new to programming C# when working on the project, so I was unable to do as much as I would've liked.</p>
+            </div>
+        </section>
+        -->
     </main>
+    <footer>
+        <p>&copy; 2025 Mannix Gabriel Muir</p>
+    </footer>
 </body>
 </html>

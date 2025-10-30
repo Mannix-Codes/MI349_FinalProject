@@ -40,3 +40,11 @@
     width: auto;
     padding: 10px;
 }
+
+
+.project-row img {
+    width: 45%;
+    height: auto;
+    padding: 10px;
+    border-radius: 22px;
+}
