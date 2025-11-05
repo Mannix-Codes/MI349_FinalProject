@@ -124,7 +124,8 @@ footer {
     grid-column-end: span third;
     grid-row-start: row1;
     grid-row-end:  span row3;
-    border-radius: 22px;
+    border-radius: 22px;    background-position: center;
+    background-blend-mode: lighten;
     transition: 500ms;
 }
 
@@ -184,6 +185,24 @@ footer {
     border-radius: 22px;  
 }
 
+a.opacify-hover:hover {
+    background-color: rgba(255, 255, 255, 0.829);
+    transition: 500ms;
+    cursor: pointer;
+}
+
+p.opacify-hover {
+    display: none;
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    margin-top: 40%;
+}
+a.opacify-hover:hover p.opacify-hover {
+    display: block;
+    transition: 500ms;
+}
 .projects-grid:has(.project-itemA:hover) {
     grid-template-columns: [first] 2fr [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [end];
     grid-template-rows: [row1] 200px [row2] 200px [row3] 100px [row3] 100px [last];
