@@ -125,7 +125,6 @@ footer {
     grid-row-start: row1;
     grid-row-end:  span row3;
     border-radius: 22px;    background-position: center;
-    background-blend-mode: lighten;
     transition: 500ms;
 }
 
@@ -189,6 +188,7 @@ a.opacify-hover:hover {
     background-color: rgba(255, 255, 255, 0.829);
     transition: 500ms;
     cursor: pointer;
+    background-blend-mode: lighten;
 }
 
 p.opacify-hover {
