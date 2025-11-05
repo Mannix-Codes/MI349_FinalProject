@@ -189,6 +189,9 @@ a.opacify-hover:hover {
     transition: 500ms;
     cursor: pointer;
     background-blend-mode: lighten;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 p.opacify-hover {
