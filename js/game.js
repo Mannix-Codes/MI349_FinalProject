@@ -1,8 +1,8 @@
 import { Enemy, Water, Air, Spawner, Earth } from './enemies.js';
 
 let interval = null;
-const height = screen.height/3;
-const width = screen.width/4;
+const height = 3* screen.width/ 12;
+const width = 4*screen.width/12;
 
 const canvas = document.getElementById("myCanvas");
 canvas.width = width;
