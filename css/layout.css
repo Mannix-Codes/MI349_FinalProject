@@ -16,6 +16,24 @@ button {
     display: block;
 }
 
+#gamePattern {
+    background-image: url("../images/photos/pattern.png");
+}
+
+canvas {
+    background-color: transparent;
+}
+
+#cabinet { 
+    background-image: url("../images/photos/Cabinet.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 100px;
+}
+
 canvas {
         background: #eeeeee;
         display: block;

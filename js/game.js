@@ -1,12 +1,12 @@
 import { Enemy, Water, Air, Spawner, Earth } from './enemies.js';
 
 let interval = null;
-const height = 3* screen.width/ 12;
-const width = 4*screen.width/12;
+//width = screen.width * 0.37;
+//height = screen.height * 0.31;
 
 const canvas = document.getElementById("myCanvas");
-canvas.width = width;
-canvas.height = height;
+//canvas.width = width;
+//canvas.height = height;
 const ctx = canvas.getContext("2d");
 // load player sprite from images folder; adjust path if your sprite is elsewhere
 const playerImage = new Image();
