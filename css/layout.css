@@ -26,12 +26,16 @@ canvas {
 
 #cabinet { 
     background-image: url("../images/photos/Cabinet.png");
-    background-size: contain;
+    background-size:  contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: fit-content;
     margin: 0 auto;
-    padding: 100px;
+    padding: 180px;
+    height: 780px;
+}
+#runButton {
+    display: block;
+    margin: auto;
 }
 
 canvas {

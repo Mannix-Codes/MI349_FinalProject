@@ -5,6 +5,8 @@ let interval = null;
 //height = screen.height * 0.31;
 
 const canvas = document.getElementById("myCanvas");
+//width = canvas.width;
+//height = canvas.height;
 //canvas.width = width;
 //canvas.height = height;
 const ctx = canvas.getContext("2d");
@@ -21,8 +23,8 @@ const ballRadius = 10;
 let x = canvas.width / 4;
 let y = canvas.height / 3;
 
-let playerX = canvas.width / 2;
-let playerY = canvas.height - 10;
+let playerX = 0;
+let playerY = 0;
 let playerHealth = 3;
 
 let pause = true;
@@ -54,23 +56,23 @@ function mouseUpHandler(e) {
 }
 
 function mouseMoveHandler(e) {
+  const rect = canvas.getBoundingClientRect();
+  const scaleX = canvas.width / rect.width;
+  const scaleY = canvas.height / rect.height;
   let pauseX = false;
   let pauseY = false;
-  let relativeX = e.clientX - canvas.offsetLeft;
+  let relativeX = (e.clientX -rect.left) * scaleX;
+  //let relativeX = e.clientX;
   if (relativeX > 0 && relativeX < canvas.width) {
     playerX = relativeX;
   }
-  else {pause = true;}
-  let relativeY = e.clientY - canvas.offsetTop;
+  else {pauseX = true;}
+  let relativeY = (e.clientY -rect.top) * scaleY;
   if (relativeY > 0 && relativeY < canvas.height) {
     playerY = relativeY;
   }
   else {pauseY = true;}
-  if (pauseX || pauseY) {
-    pause = true;
-  } else {
-    pause = false;
-  }
+  pause = pauseX || pauseY;
 }
 
 
@@ -274,7 +276,7 @@ function drawTutorial () {
   ctx.fillStyle = "black";
   ctx.fillText("Move With Your Mouse", canvas.width/2, canvas.height/4);
   ctx.fillText("Click to Explode", canvas.width/2, 2*canvas.height/4);
-  ctx.fillText("Avoid Red", canvas.width/2, 3*canvas.height/4);
+  ctx.fillText("Avoid Squares", canvas.width/2, 3*canvas.height/4);
 }
 
 function tutorialRound() {
