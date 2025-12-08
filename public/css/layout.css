@@ -18,7 +18,7 @@ button {
 }
 
 #gamePattern {
-    background-image: url("../src/assets/images/photos/pattern.png");
+    background-image: url("/public/pattern.png");
 }
 
 canvas {
@@ -26,7 +26,7 @@ canvas {
 }
 
 #cabinet { 
-    background-image: url("../src/assets/images/photos/Cabinet.png");
+    background-image: url("/public/Cabinet.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -147,7 +147,7 @@ footer {
 }
 .project-itemA {
     
-    background-image: url(../src/assets/images/photos/Poster1.png);
+    background-image: url(/public/Poster1.png);
     background-position: center;
     background-size: cover;
     grid-column-start: first;
@@ -161,7 +161,7 @@ footer {
     
 .project-itemB {
     transition: 500ms;
-    background-image: url(../src/assets/images/photos/cyberhazardHUD.png);
+    background-image: url(/public/cyberhazardHUD.png);
     background-position: center;
     background-size: cover;
     grid-column-start: third;
@@ -171,7 +171,7 @@ footer {
     border-radius: 22px;
 }
 .project-itemC {
-    background-image: url(../src/assets/images/photos/Impact-Episode.png);
+    background-image: url(/public/Impact-Episode.png);
     background-position: center;
     background-size: cover;
     grid-column-start: fifth;
@@ -182,7 +182,7 @@ footer {
 }
 
 .project-itemD {
-    background-image: url(../src/assets/images/photos/Desktop349.png);
+    background-image: url(/public/Desktop349.png);
     background-position: center;
     background-size: cover;
     grid-column-start: first;
@@ -193,7 +193,7 @@ footer {
 }
 
 .project-itemE {
-    background-image: url(../src/assets/images/photos/figmaprototype.png);
+    background-image: url(/public/figmaprototype.png);
     background-position: center;
     background-size: cover;
     grid-column-start: third;
@@ -204,7 +204,7 @@ footer {
 }
 
 .project-itemF {
-    background-image: url(../src/assets/images/photos/Otapperscreen.png);
+    background-image: url(/public/Otapperscreen.png);
     background-position: center;
     background-size: cover;
     grid-column-start: fifth;

@@ -20,7 +20,7 @@ img {
 }
 
 #church-image {
-    background-image: url(../src/assets/images/photos/church.png);
+    background-image: url(/public/church.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
