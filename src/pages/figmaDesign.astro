@@ -4,6 +4,8 @@ import OverviewBar from "../components/overviewBar.astro";
 import RedBarLeft from '../components/redBarLeft.astro';
 import YellowBarRight from '../components/yellowBarRight.astro';
 import ColumnBar from '../components/columnBar.astro';
+import figmaprototype from "../assets/images/photos/figmaprototype.png";
+import FigmaPages from "../assets/images/photos/FigmaPages.png" ;
 ---
 <ProjectLayout>
     <main>
@@ -13,10 +15,10 @@ import ColumnBar from '../components/columnBar.astro';
             <li><strong>Programs Used</strong></li>
                     <li>-Figma</li>
         </ul>
-        <img slot="content" src="../src/assets/images/photos/figmaprototype.png" //alt="The Last Halloween Screenshot 1" class="video-wrapper right"/>
+        <img slot="content" src={figmaprototype.src} alt="The Last Halloween Screenshot 1" class="video-wrapper right"/>
         </OverviewBar>
         <RedBarLeft Title="Design">
-            <img src="../src/assets/images/photos/FigmaPages.png" class="video-wrapper left" alt="The Last Halloween Board halfway through the delivery sprint"
+            <img src={FigmaPages.src} class="video-wrapper left" alt="The Last Halloween Board halfway through the delivery sprint"
             slot="content">
             <p slot="text" class="white indented-text">The original assignment tasked us with developing a basic shopping page for a small (fictional) business. I focused on creating a clean and intuitive user interface, ensuring that the navigation and product display were user-friendly and visually appealing.</p>
         </RedBarLeft>
@@ -24,7 +26,7 @@ import ColumnBar from '../components/columnBar.astro';
             <p class="indented-text" slot="text">After fulfilling the requirements of the assignment, I continued to explore Figma's prototyping features. I created interactive elements, linked pages, and tested user flows to ensure a smooth and intuitive experience. I also worked with figma variables to create dynamic content that could change based on user interactions throughout the design</p>
             <div class="video-wrapper right centered" slot="content">
                 <video controls>
-                    <source src="../src/assets/videos/figmainteractions.mp4" type="video/mp4">
+                    <source src="/videos/figmainteractions.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>

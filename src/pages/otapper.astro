@@ -4,6 +4,8 @@ import OverviewBar from "../components/overviewBar.astro";
 import RedBarLeft from '../components/redBarLeft.astro';
 import YellowBarRight from '../components/yellowBarRight.astro';
 import ColumnBar from '../components/columnBar.astro';
+import Otapperscreen from "../assets/images/photos/Otapperscreen.png";
+import OtapperBurndown from "../assets/images/photos/OtapperBurndown.png";
 ---
 <ProjectLayout>
     <main>
@@ -18,20 +20,20 @@ import ColumnBar from '../components/columnBar.astro';
         </ul>
         <div class="video-wrapper right" slot="content">
                 <video controls>
-                    <source src="../src/assets/videos/Otapper.mp4" type="video/mp4">
+                    <source src="/videos/Otapper.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
         </OverviewBar>
         <RedBarLeft Title="Challenges">
-            <img src="../src/assets/images/photos/Otapperscreen.png" class="video-wrapper left" alt="O'tapper Opening Screen" slot="content">
+            <img src={Otapperscreen.src} class="video-wrapper left" alt="O'tapper Opening Screen" slot="content">
             <div slot="text">
             <p class="white indented-text">This project posed a couple of unique problems that I couldn't easily get help on. Primarily was the movement system, instead of being able to use a gravity based or standard grid system I created a series of points that the player was locked on the X axis to. Additionally ensuring the ways the player moved up and down, and snapped back to the keg when pouring beer were movements I had to take into account. Another mechanic I would like to highlight is the instantiation, and destruction of the beer and glass objects (represented by cream and neon green rectangles). In working on this mechanic I also learned about, and used co-routines. I then continued to use co-routines throghout the project in the patrons, start screens, and event system.</p>
             </div>
         </RedBarLeft>
         <YellowBarRight Title="The Burndown Chart">
             <p class="indented-text" slot="text">As a part of this project I was introduced to a burndown chart and scrum. I really enjoyed the way these tools help me stay on track and think they are a valuble asset to production timelines, and am excited ot use them in the future.</p>
-            <img src="../src/assets/images/photos/OtapperBurndown.png" class="video-wrapper right" alt="Cyberhazard HUD" slot="content">
+            <img src={OtapperBurndown.src} class="video-wrapper right" alt="Cyberhazard HUD" slot="content">
         </YellowBarRight>
         <ColumnBar>
             <h4 class="black small centered" slot="title1">Where I Succeeded</h4>

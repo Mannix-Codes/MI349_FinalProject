@@ -4,6 +4,8 @@ import OverviewBar from "../components/overviewBar.astro";
 import RedBarLeft from '../components/redBarLeft.astro';
 import YellowBarRight from '../components/yellowBarRight.astro';
 import ColumnBar from '../components/columnBar.astro';
+import Desktop349 from "../assets/images/photos/Desktop349.png";
+import FigmaSite from "../assets/images/photos/FigmaSite.png";
 ---
 <ProjectLayout>
     <main>
@@ -17,10 +19,10 @@ import ColumnBar from '../components/columnBar.astro';
             <li>-JavaScript</li>
             <li>-Astro</li>
         </ul>
-        <img slot="content" src="../src/assets/images/photos/Desktop349.png" //alt="The Last Halloween Screenshot 1" class="video-wrapper right"/>
+        <img slot="content" src={Desktop349.src} //alt="The Last Halloween Screenshot 1" class="video-wrapper right"/>
         </OverviewBar>
         <RedBarLeft Title="Design">
-            <img src="../src/assets/images/photos/FigmaSite.png" class="video-wrapper left" alt="The Last Halloween Board halfway through the delivery sprint"
+            <img src={FigmaSite.src} class="video-wrapper left" alt="The Last Halloween Board halfway through the delivery sprint"
             slot="content">
             <p slot="text" class="white indented-text">The concept for the overall aesthetic and design of this sate came to fruition during the first assignment of a web design class at MSU. I wanted to choose a bright color scheme and retro/comic aesthetic. I had been wanting to re-vamp my portfiolio site, and decided to use this assignment as an opportunity begin that process. I also got to work more with vectors and logo design, as both the site logo and fire frame were created by me.</p>
         </RedBarLeft>
@@ -28,7 +30,7 @@ import ColumnBar from '../components/columnBar.astro';
             <p class="indented-text" slot="text">While I had an introductory level knowledge of html and css before starting this project, I was able to expand my skills significantly. I learned about responsive design, semantic HTML, and advanced CSS techniques to create a visually appealing and functional website. One technique I will be using much more in the future is the css grid which is demonstrated best on the projects page</p>
             <div class="video-wrapper right centered" slot="content">
                 <video controls>
-                    <source src="../src/assets/videos/CSSgrid.mp4" type="video/mp4">
+                    <source src="/videos/CSSgrid.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>

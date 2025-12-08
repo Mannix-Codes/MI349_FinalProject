@@ -4,6 +4,7 @@ import OverviewBar from "../components/overviewBar.astro";
 import RedBarLeft from '../components/redBarLeft.astro';
 import YellowBarRight from '../components/yellowBarRight.astro';
 import ColumnBar from '../components/columnBar.astro';
+import NicheInStudio from "../assets/images/photos/Niche-InStudio.jpg";
 ---
 <ProjectLayout>
     <main>
@@ -24,7 +25,7 @@ import ColumnBar from '../components/columnBar.astro';
         <RedBarLeft Title="Pitching, Producing, and Releasing">
             <div class="video-wrapper left" slot="content">
                 <video controls>
-                    <source src="../src/assets/videos/Niche-presentations.mp4" type="video/mp4">
+                    <source src="/videos/Niche-presentations.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -34,7 +35,7 @@ import ColumnBar from '../components/columnBar.astro';
         </RedBarLeft>
         <YellowBarRight Title="Production Cycles">
             <p class="indented-text" slot="text">Unlike most of my other project Niche follows a 3 week production cycle, with each week dedicated to a different stage of production. This includes pre-production, production, and post-production. Each stage has its own set of tasks and deliverables, and requires careful planning and coordination to ensure that the show is completed on time and to a high standard. While the iterative design process has similarities, the turnaround on a television show is much faster and requires more immediate problem-solving.</p>
-            <img src="../src/assets/images/photos/Niche-InStudio.jpg" class="video-wrapper right" alt="Cyberhazard HUD" slot="content">
+            <img src={NicheInStudio.src} class="video-wrapper right" alt="Cyberhazard HUD" slot="content">
         </YellowBarRight>
         <ColumnBar link="https://mannixgames.itch.io/the-last-halloween">
             <h4 class="black small centered" slot="title1">Where I Succeeded</h4>

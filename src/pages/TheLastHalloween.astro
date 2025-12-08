@@ -4,6 +4,10 @@ import OverviewBar from "../components/overviewBar.astro";
 import RedBarLeft from '../components/redBarLeft.astro';
 import YellowBarRight from '../components/yellowBarRight.astro';
 import ColumnBar from '../components/columnBar.astro';
+import Summary from "../assets/images/photos/summary.png";
+import TLHboard from "../assets/images/photos/TLHboard.png";
+import TLHingame from "../assets/images/photos/TLHingame.png";
+
 ---
 <ProjectLayout>
     <main>
@@ -17,16 +21,16 @@ import ColumnBar from '../components/columnBar.astro';
             <li>-Gitlab Version control</li>
             <li>-Microsoft Powerpoint</li>
         </ul>
-        <img slot="content" src="../src/assets/images/photos/summary.png" //alt="The Last Halloween Screenshot 1" class="video-wrapper right"/>
+        <img slot="content" src={Summary.src} alt="The Last Halloween Screenshot 1" class="video-wrapper right"/>
         </OverviewBar>
         <RedBarLeft Title="Team Experience">
-            <img src="../src/assets/images/photos/TLHboard.png" class="video-wrapper left" alt="The Last Halloween Board halfway through the delivery sprint"
+            <img src={TLHboard.src} class="video-wrapper left" alt="The Last Halloween Board halfway through the delivery sprint"
             slot="content">
             <p slot="text" class="white indented-text">This game was not my first experience working in a team, however it has been the longest I've worked on a team project. Not only that it was my first experience being a project manager. As a project manager I was in charge of organizing sprints, delegating tasks, and ensuring that the team was on track to complete the game within the two month time limit. This experience taught me a lot about leadership and communication within a team setting. I also learned a great deal about scope and time management, as well as the agile development process</p>
         </RedBarLeft>
         <YellowBarRight Title="Swiss Army Knife">
             <p class="indented-text" slot="text">This project taught me the value of being a versatile team memner, especially when in a producer role. Due to the small nature of our team and the limited time we had to complete the project, I had to fill in wherever I was needed. This included programming, designing, and testing when our leads were focusing on more important features. Namely I created the mini-map and summary page UI while our programmer and designers were pre-occupied</p>
-            <img src="../src/assets/images/photos/TLHingame.png" class="video-wrapper right" alt="The Last Halloween Gameplay" slot="content">
+            <img src={TLHingame.src} class="video-wrapper right" alt="The Last Halloween Gameplay" slot="content">
         </YellowBarRight>
         <ColumnBar link="https://mannixgames.itch.io/the-last-halloween">
             <h4 class="black small centered" slot="title1">Where We Succeeded</h4>
