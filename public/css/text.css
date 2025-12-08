@@ -1,0 +1,130 @@
+
+a {
+    text-decoration: none;
+}
+
+a.Blank-Link {
+  width: 50%;
+  text-decoration: none;
+}
+
+h1, h2{
+    color: #E09F3E;
+    font-family: 'Direction';
+    letter-spacing: 2px;
+    padding:20px;
+}
+
+h2 {
+    font-size: 64pt;
+    text-shadow: -14px 0px #540b0e;
+    text-align: center;
+}
+
+
+
+h5 {
+    padding: 0;
+    font-size: 30pt;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header h1 {
+    font-size: 40pt;
+    text-shadow: -8px 0px #540b0e;
+}
+
+h3 {
+    color: #540b0e;
+    font-family: 'Direction';
+    letter-spacing: 2px;
+    font-size: 64pt;
+    padding: 20px;
+    text-align: center;
+}
+
+h4 {
+    color: #335c67;
+    font-family: 'Direction';
+    font-size: 64pt;
+    letter-spacing: 2px;
+}
+
+h4.red {
+    color:#540b0e;
+}
+.blue {
+    color: #335c67;
+}
+.white {
+    color: white;
+}
+
+h4.yellow {
+    color:#E09F3E;
+}
+
+.black {
+    color: black;
+}
+
+.small {
+    text-align: center;
+    font-size: 40pt;
+}
+
+p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20pt;
+    line-height: 1.5;
+}
+
+u{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30pt;
+    line-height: 1.5;
+    padding: 30px;
+    padding-collapse: separate;
+    display: inline-block;
+}
+
+.hide {
+    display: none;
+}
+
+.white-text {
+    color: white;
+}
+
+.indented-text {
+    text-indent: 40px;
+}
+
+.centered {
+    text-align: center;
+}
+strong {
+    color: #9e2a2b;
+    font-family: 'Direction';
+    letter-spacing: 2px;
+    font-size: 30pt;
+}
+
+.intro-text p {
+    padding: 20px;
+}
+#church-image p {
+  font-family: 'Varela Round', sans-serif;
+    color: white;
+    font-size: 40pt;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+header a {
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    text-decoration: none;
+    font-size: 20pt;
+}

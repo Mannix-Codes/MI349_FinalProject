@@ -1,0 +1,151 @@
+
+@media screen and (min-width: 300px) {
+  header {
+    display: block;
+    padding: 0;
+  }
+
+  header ul li {
+    display: block;
+    border-top: 1px solid white;
+  }
+  #logo {
+    display: none;
+  }
+  #fire-image {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+  .intro-bar {
+    display: block;
+  }
+
+  #Projects-Bar {
+    display: block;
+  }
+
+  #Resume-Bar {
+    display: block;
+  }
+
+  #church-image {
+    margin: auto;
+    display: block;
+    width: 80%;
+    height: auto;
+  }
+
+  .question {
+    width: 50%;
+    margin-left:5%;
+  }
+
+  h4, h4.red, h4.white, h4.yellow{
+
+    padding-bottom: 20px;
+  }
+
+  h4.red, h4.white, h4.yellow{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  #signature-image {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+
+  #resume-button {
+    padding: 20px 80px;
+    align-self: center;
+    place-self: center;
+  }
+
+  #social-bar {
+    display: block;
+    text-align: center;
+  }
+  #social-bar h4 {
+    margin: auto;
+  }
+    .social-line {
+    width: 40%;
+    margin: auto;
+  }
+  .experience {
+    display: block;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .experience {
+    display: flex;
+  }
+  header {
+    display: flex;
+  }
+  header ul li {
+    display: inline-block;
+    border-top: none;
+  }
+  #fire-image {
+    width: 31%;
+    height: 62%;
+  }
+  .intro-bar {
+    display: flex;
+  }
+
+  #logo {
+    display: none;
+  }
+  #Projects-Bar {
+    display: flex
+  }
+
+  #Resume-Bar {
+    display: flex;
+  }
+
+  #church-image {
+    display: block;
+  }
+
+  #signature-image {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+  #social-bar {
+    display: flex;
+  }
+
+  #social-bar h4 {
+    margin: 0;
+  }
+
+  .social-line {
+    justify-content: left;
+    width: auto;
+  }
+  h4.red, h4.white, h4.yellow, h4.black {
+    margin: 0;
+    padding:0;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #logo {
+    display: block;
+  }
+}
