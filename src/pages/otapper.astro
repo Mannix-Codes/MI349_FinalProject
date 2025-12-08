@@ -1,0 +1,45 @@
+---
+import ProjectLayout from '../layouts/ProjectLayout.astro';
+import OverviewBar from "../components/overviewBar.astro";
+import RedBarLeft from '../components/redBarLeft.astro';
+import YellowBarRight from '../components/yellowBarRight.astro';
+import ColumnBar from '../components/columnBar.astro';
+---
+<ProjectLayout>
+    <main>
+        <OverviewBar Title="O'Tapper">
+        <p slot="overview">O'Tapper is a clone of the original Tapper that was found in Arcades, and Bars across America. I created this project on my own as a part of the classic game project for my game programming and development class.</p>
+        <ul slot="technologies list">
+            <li><strong>Programs Used</strong></li>
+            <li>-Unity</li>
+            <li>-C#</li>
+            <li>-Adobe Audition</li>
+
+        </ul>
+        <div class="video-wrapper right" slot="content">
+                <video controls>
+                    <source src="../src/assets/videos/Otapper.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </OverviewBar>
+        <RedBarLeft Title="Challenges">
+            <img src="../src/assets/images/photos/Otapperscreen.png" class="video-wrapper left" alt="O'tapper Opening Screen" slot="content">
+            <div slot="text">
+            <p class="white indented-text">This project posed a couple of unique problems that I couldn't easily get help on. Primarily was the movement system, instead of being able to use a gravity based or standard grid system I created a series of points that the player was locked on the X axis to. Additionally ensuring the ways the player moved up and down, and snapped back to the keg when pouring beer were movements I had to take into account. Another mechanic I would like to highlight is the instantiation, and destruction of the beer and glass objects (represented by cream and neon green rectangles). In working on this mechanic I also learned about, and used co-routines. I then continued to use co-routines throghout the project in the patrons, start screens, and event system.</p>
+            </div>
+        </RedBarLeft>
+        <YellowBarRight Title="The Burndown Chart">
+            <p class="indented-text" slot="text">As a part of this project I was introduced to a burndown chart and scrum. I really enjoyed the way these tools help me stay on track and think they are a valuble asset to production timelines, and am excited ot use them in the future.</p>
+            <img src="../src/assets/images/photos/OtapperBurndown.png" class="video-wrapper right" alt="Cyberhazard HUD" slot="content">
+        </YellowBarRight>
+        <ColumnBar>
+            <h4 class="black small centered" slot="title1">Where I Succeeded</h4>
+            <p class="centered" slot="text1">This project helped me learn a lot more about a production timline. I had to use burndown charts, and scrums in order to keep myself on track. I also learned a lot more about coding for unity in 2D.</p>
+            <h4 slot="title2" class="black small centered">Where I Can Improve</h4>
+            <p slot="text2" class="centered">I hope in the future to be able to implement sprites and animations from the original game. From the start I began with the understanding that I would likely not treat art as a priority as it was for a coding class, but being able to code an animation switcher is an important skill to have. </p>
+            <a href="https://mannixgames.itch.io/classic-game-project-mi231" slot="link">
+            <u class="black"> You Can Play O'Tapper Here!</u></a>
+        </ColumnBar>
+    </main> 
+</ProjectLayout>

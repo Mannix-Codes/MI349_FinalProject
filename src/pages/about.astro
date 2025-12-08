@@ -1,0 +1,38 @@
+---
+import MannixLayout from '../layouts/MannixLayout.astro';
+import NavBar from '../components/navBar.astro';
+import Footer from '../components/footer.astro';
+import MannixImage from '../assets/images/photos/MannixFireSmile.png';
+import ExperienceCard from '../components/experienceCard.astro';
+import { Image } from 'astro:assets';
+---
+
+<MannixLayout>
+    <NavBar />
+    <main>
+        <div class="intro-bar">
+            <img src={MannixImage.src} alt="Mannix Image" id="fire-image" class="centered"/>
+            <div class="intro-text">
+                <h3>About Me</h3>
+                <p>Hi, I'm Mannix! I'm a game producer and web designer with a passion for creating narrative driven interactive epics.</p>
+                <p> My game design journey began at summer camp where I created engaging physical games for campers during the day, and brought cabins through detailed choose your own adventure stories at night. As a student at Michigan State University, I have honed my skills in game design and production, working on various projects in both the Games and Interactive Media Major, and the Game Design and Development, and Computer Science minors.</p>
+            </div>
+        </div>
+        <section>
+            <h2> Experience</h2>
+            <div class="experience">
+                <div class="row">
+                <ExperienceCard imagePath="/U_Cube_1C_Black.svg" Software="Unity" Duration="3 years" />
+                <ExperienceCard imagePath="/unreal-1.svg" Software="Unreal Engine" Duration="2 Months" />
+                <ExperienceCard imagePath="/CSharp_Logo.svg" Software="C#" Duration="1 year" />
+                </div>
+                <div class="row">
+                <ExperienceCard imagePath="/ISO_C++_Logo.svg" Software="C++" Duration="1 year" />
+                <ExperienceCard imagePath="/Microsoft_365_(2022).svg" Software="Microsoft 365" Duration="3 years"/>
+                <ExperienceCard imagePath="/Adobe_Creative_Cloud_rainbow_icon.svg" Software="Adobe Creative Cloud" Duration="3 years" />
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</MannixLayout>

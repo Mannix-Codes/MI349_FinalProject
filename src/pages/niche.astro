@@ -1,0 +1,48 @@
+---
+import ProjectLayout from '../layouts/ProjectLayout.astro';
+import OverviewBar from "../components/overviewBar.astro";
+import RedBarLeft from '../components/redBarLeft.astro';
+import YellowBarRight from '../components/yellowBarRight.astro';
+import ColumnBar from '../components/columnBar.astro';
+---
+<ProjectLayout>
+    <main>
+        <OverviewBar Title="Niche">
+        <p slot="overview">"Niche" is a student run game show that I created with Aiden Myerson for the student organization Telecasters, I developed the software, and continue to develop episodes as a producer</p>
+        <ul slot="technologies list">
+            <li><strong>Tools Used</strong></li>
+            <li>-Microsoft Powerpoint</li>
+            <li>-Slack</li>
+            <li>-Multi-Camera Studio</li>
+            <li>-Adobe Photoshop</li>
+            <li>-Premiere Pro</li>
+        </ul>
+        <div class="video-wrapper right" slot="content">
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/T4nR3fJQ1P8?si=VRrhXXjpX_bN_Ym-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </OverviewBar>
+        <RedBarLeft Title="Pitching, Producing, and Releasing">
+            <div class="video-wrapper left" slot="content">
+                <video controls>
+                    <source src="../src/assets/videos/Niche-presentations.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div slot="text">
+            <p class="white indented-text">Unlike most other decades-old shows within Telecasters, Niche is brand new. This meant me and Aiden had take the concept from pitching in executive board meetings, to producing, and finally releasing episodes to the public. For this process I had to write a treatment, create slides, and develop the software to run the show. I also had to learn how to manage a television studio, with a live audience a host and contestants in a format that doesn't allow for multiple takes. To the right you can see the pitch presentation I created for the show</p>
+            </div>
+        </RedBarLeft>
+        <YellowBarRight Title="Production Cycles">
+            <p class="indented-text" slot="text">Unlike most of my other project Niche follows a 3 week production cycle, with each week dedicated to a different stage of production. This includes pre-production, production, and post-production. Each stage has its own set of tasks and deliverables, and requires careful planning and coordination to ensure that the show is completed on time and to a high standard. While the iterative design process has similarities, the turnaround on a television show is much faster and requires more immediate problem-solving.</p>
+            <img src="../src/assets/images/photos/Niche-InStudio.jpg" class="video-wrapper right" alt="Cyberhazard HUD" slot="content">
+        </YellowBarRight>
+        <ColumnBar link="https://mannixgames.itch.io/the-last-halloween">
+            <h4 class="black small centered" slot="title1">Where I Succeeded</h4>
+            <p class="centered" slot="text1">I was able to successfully pitch, produce, and release a new show within a student organization. I developed the software, managed the production cycle, and coordinated with the team to ensure each episode was completed on time and to a high standard.</p>
+            <h4 slot="title2" class="black small centered">Where I Can Improve</h4>
+            <p slot="text2" class="centered">The show is still in production, and I am continuously learning how to better manage the production cycle, coordinate with the team, and improve the software to enhance the overall quality of the show. Additionally the team and I focus on how to challenge the format and create new and interesting episodes.</p>
+            <a href="https://www.youtube.com/@NicheMSU" slot="link">
+            <u class="black"> You Can Watch All Episodes Of Niche Here!</u></a>
+        </ColumnBar>
+    </main> 
+</ProjectLayout>

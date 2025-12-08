@@ -1,0 +1,40 @@
+---
+import ProjectLayout from '../layouts/ProjectLayout.astro';
+import OverviewBar from "../components/overviewBar.astro";
+import RedBarLeft from '../components/redBarLeft.astro';
+import YellowBarRight from '../components/yellowBarRight.astro';
+import ColumnBar from '../components/columnBar.astro';
+---
+<ProjectLayout>
+    <main>
+        <OverviewBar Title="The Last Halloween">
+        <p slot="overview">The Last Halloween is a game that me and a team of other students developed as a part of the MSU Game Design and development minor. I was the project manager for my team, but filled in programming in some areas</p>
+        <ul slot="technologies list">
+            <li><strong>Programs Used</strong></li>
+            <li>-Unity</li>
+            <li>-C#</li>
+            <li>-Hack n' Plan</li>
+            <li>-Gitlab Version control</li>
+            <li>-Microsoft Powerpoint</li>
+        </ul>
+        <img slot="content" src="../src/assets/images/photos/summary.png" //alt="The Last Halloween Screenshot 1" class="video-wrapper right"/>
+        </OverviewBar>
+        <RedBarLeft Title="Team Experience">
+            <img src="../src/assets/images/photos/TLHboard.png" class="video-wrapper left" alt="The Last Halloween Board halfway through the delivery sprint"
+            slot="content">
+            <p slot="text" class="white indented-text">This game was not my first experience working in a team, however it has been the longest I've worked on a team project. Not only that it was my first experience being a project manager. As a project manager I was in charge of organizing sprints, delegating tasks, and ensuring that the team was on track to complete the game within the two month time limit. This experience taught me a lot about leadership and communication within a team setting. I also learned a great deal about scope and time management, as well as the agile development process</p>
+        </RedBarLeft>
+        <YellowBarRight Title="Swiss Army Knife">
+            <p class="indented-text" slot="text">This project taught me the value of being a versatile team memner, especially when in a producer role. Due to the small nature of our team and the limited time we had to complete the project, I had to fill in wherever I was needed. This included programming, designing, and testing when our leads were focusing on more important features. Namely I created the mini-map and summary page UI while our programmer and designers were pre-occupied</p>
+            <img src="../src/assets/images/photos/TLHingame.png" class="video-wrapper right" alt="The Last Halloween Gameplay" slot="content">
+        </YellowBarRight>
+        <ColumnBar link="https://mannixgames.itch.io/the-last-halloween">
+            <h4 class="black small centered" slot="title1">Where We Succeeded</h4>
+            <p class="centered" slot="text1">Our team was able to develop a functional game within the time constraints, effectively collaborate using version control, and implement some highly technical features such as our fully procedurally generated levels.</p>
+            <h4 slot="title2" class="black small centered">Where I Can Improve</h4>
+            <p slot="text2" class="centered">We had to cut a lot of features, and ran out of scope a lot quicker than expected. In future projects I'll focus on being more reasonable when planning, and managing scope more effectively.</p>
+            <a href="https://mannixgames.itch.io/the-last-halloween" slot="link">
+            <u class="black"> You Can Play The Last Halloween Here!</u></a>
+        </ColumnBar>
+    </main> 
+</ProjectLayout>

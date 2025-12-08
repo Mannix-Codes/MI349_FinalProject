@@ -1,0 +1,41 @@
+---
+import ProjectLayout from '../layouts/ProjectLayout.astro';
+import OverviewBar from "../components/overviewBar.astro";
+import RedBarLeft from '../components/redBarLeft.astro';
+import YellowBarRight from '../components/yellowBarRight.astro';
+import ColumnBar from '../components/columnBar.astro';
+---
+<ProjectLayout>
+    <main>
+        <OverviewBar Title="Figma Design">
+        <p slot="overview">This project began as an assignment for my web design class on creating a basic figma prototype. After beginning though I decided to continue working on the project to further develop my skills and understanding of figma, and other design principles.</p>
+        <ul slot="technologies list">
+            <li><strong>Programs Used</strong></li>
+                    <li>-Figma</li>
+        </ul>
+        <img slot="content" src="../src/assets/images/photos/figmaprototype.png" //alt="The Last Halloween Screenshot 1" class="video-wrapper right"/>
+        </OverviewBar>
+        <RedBarLeft Title="Design">
+            <img src="../src/assets/images/photos/FigmaPages.png" class="video-wrapper left" alt="The Last Halloween Board halfway through the delivery sprint"
+            slot="content">
+            <p slot="text" class="white indented-text">The original assignment tasked us with developing a basic shopping page for a small (fictional) business. I focused on creating a clean and intuitive user interface, ensuring that the navigation and product display were user-friendly and visually appealing.</p>
+        </RedBarLeft>
+        <YellowBarRight Title="Prototyping">
+            <p class="indented-text" slot="text">After fulfilling the requirements of the assignment, I continued to explore Figma's prototyping features. I created interactive elements, linked pages, and tested user flows to ensure a smooth and intuitive experience. I also worked with figma variables to create dynamic content that could change based on user interactions throughout the design</p>
+            <div class="video-wrapper right centered" slot="content">
+                <video controls>
+                    <source src="../src/assets/videos/figmainteractions.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </YellowBarRight>
+        <ColumnBar link="https://mannixgames.itch.io/the-last-halloween">
+            <h4 class="black small centered" slot="title1">Where I Succeeded</h4>
+            <p class="centered" slot="text1">This project helped me learn a lot more about figma, prototyping, and user interface design. I gained valuable experience in creating interactive prototypes and understanding user flows, which will be beneficial for future design projects.</p>
+            <h4 slot="title2" class="black small centered">Where I Can Improve</h4>
+            <p slot="text2" class="centered">I plan to continue exploring Figma's advanced features, including more complex prototyping, component libraries, and collaborative design workflows. This will help me create more sophisticated and user-friendly designs in future projects.</p>
+            <a href="https://www.figma.com/proto/QhkFhDWukLo2UVvK6NWiAD/Lab-2?node-id=3-51&p=f&t=REeGEUVRV4wOq5xm-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A50" slot="link">
+            <u class="black"> You Can View This Prototype Here!</u></a>
+        </ColumnBar>
+    </main> 
+</ProjectLayout>

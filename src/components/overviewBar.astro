@@ -1,0 +1,15 @@
+---
+import '../css/master.css'
+const Title = Astro.props.Title;
+---
+<div>
+    <h3>{Title}</h3>
+    <section class="projects-page-grid">
+        <div class="project-textblock left">
+            <h4 class="black small">Project Overview</h4>
+            <slot name="overview" />
+            <slot name="technologies list"/>
+        </div>
+            <slot name="content"/>
+    </section>
+</div>

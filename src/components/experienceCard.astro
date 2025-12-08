@@ -1,0 +1,11 @@
+---
+import '../css/master.css'
+import { Image } from 'astro:assets';
+const{ imagePath, Software, Duration } = Astro.props;
+---
+
+<div class="experience-block">
+    <img src={imagePath} alt="Logo" class="experience-image" />
+    <h5>{Software}</h5>
+    <p>{Duration}</p>
+</div>

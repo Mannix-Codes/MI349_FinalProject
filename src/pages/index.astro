@@ -1,0 +1,59 @@
+---
+import MannixLayout from '../layouts/MannixLayout.astro';
+import NavBar from '../components/navBar.astro';
+import Footer from '../components/footer.astro';
+import FireImage from '../assets/images/photos/FireImage.png';
+import Signature from '../assets/images/photos/Group-5.png';
+import Instagram from '../assets/images/svg/instagram-brands-solid-full (1).svg';
+import LinkedIn from '../assets/images/svg/linkedin-brands-solid-full.svg';
+---
+
+<MannixLayout>
+	<NavBar />
+	<main>
+		<section>
+            <h2>Mannix Gabriel Muir</h2>
+            <!--<p class="subtitle">Game Designer and Producer</p>-->
+            <div  class="intro-bar">
+                <img src={FireImage.src} alt="Fire Image" id="fire-image" class="centered">
+                <div class = "intro-text">
+                    <h3>Burning It Up!</h3>
+                    <p>Hailing from the granite state of New Hampshire, I am currently enrolled at Michigan State University majoring in Games and Interactive Media.  I'm a game producer and web designer with a passion for creating narrative driven interactive epics. Outside of academics you can find me reading comics, designing games or running Niche! A student run game show at MSU. I’ve spent my past couple summers at YMCA camp Mi-Te-Na where I’ve been able to work on physical playtests of some of my personal projects. In my spare time I enjoy outdoor activities like snowboarding and camping. Growing up in New Hampshire I learned how to handle the cold, that’s why I always try to bring the <strong>HEAT!</strong></p>
+                    <img src={Signature.src} alt="Mannix Signature" id="signature-image">
+                </div>
+            </div>
+        </section>
+		<section id="Projects-Bar">
+            <h4 class="question"> What am I up to? Check out my recent projects here!</h4>
+            <a href="/_pages/projects.html" class="Blank-Link">
+            <div id="church-image">
+                <p>Recent Work</p>
+            </div>
+            </a>
+        </section>
+        <section id="Resume-Bar">
+            <div>
+                <h4 class="white">Experience!</h4>
+                <h4 class="yellow">Experience!</h4>
+                <h4 class="red">Experience!</h4>
+            </div>
+            <a href="Resume.pdf">
+                <div id="resume-button">Résumé/CV</div>
+            </a>
+        </section>
+        <section id="social-bar">
+            <h4 class="black"> SOCIALS</h4>
+            <div class="social-block">
+                <div class="social-line">
+                    <img src={Instagram.src} alt="Instagram logo" class="social-icon">
+                    <p>@mannixthemaniac</p>
+                </div>
+                <div class="social-line">
+                    <img src={LinkedIn.src} alt="LinkedIn logo" class="social-icon">
+                    <p>Mannix Muir</p>
+                </div>
+            </div>
+        </section>
+	</main>
+	<Footer />
+</MannixLayout>

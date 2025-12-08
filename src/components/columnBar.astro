@@ -1,0 +1,17 @@
+---
+import '../css/master.css'
+const ELink = Astro.props.ELink;
+---
+    <section class="projects-page-grid">
+        <div class="project-textblock left">
+            <slot name="title1" />
+            <slot name="text1" />
+        </div>
+        <div class="project-textblock right">
+            <slot name="title2" />
+            <slot name="text2" />
+        </div>
+    </section>
+    <div class="centered">
+        <slot name="link" />
+    </div>
