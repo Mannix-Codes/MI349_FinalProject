@@ -1,0 +1,43 @@
+---
+import ProjectLayout from '../layouts/ProjectLayout.astro';
+import OverviewBar from "../components/overviewBar.astro";
+import RedBarLeft from '../components/redBarLeft.astro';
+import YellowBarRight from '../components/yellowBarRight.astro';
+import ColumnBar from '../components/columnBar.astro';
+import EpicTaleImage1 from "../assets/images/photos/EpicTaleImage1.png";
+import EpicTaleImage2 from "../assets/images/photos/EpicTaleImage2.png" ;
+import EpicTaleImage3 from "../assets/images/photos/EpicTaleImage3.png";
+---
+<ProjectLayout>
+    <main>
+        <OverviewBar Title="EpicTale">
+        <p slot="overview">This project was an assignment for my web design class focused on creating a relational database using ruby on rails. My group and I set out to create a functional and efficient database system for viewing and connecting various pieces of media</p>
+        <ul slot="technologies list">
+            <li><strong>Programs Used</strong></li>
+                    <li>-Ruby on Rails</li>
+                    <li>-HTML</li>
+                    <li>-CSS</li>
+                    <li>-React</li>
+        </ul>
+        <img slot="content" src={EpicTaleImage1.src} alt="The Epic Tale Homepage" class="video-wrapper right"/>
+        </OverviewBar>
+        <RedBarLeft Title="Design">
+            <img src={EpicTaleImage2.src} class="video-wrapper left" alt="One of the Epic Tale Database Images"
+            slot="content"/>
+            <p slot="text" class="white indented-text">This assignment required us to design a functional and efficient relational database system using Ruby on Rails. My focus was on ensuring that the database structure was well-organized and that the relationships between different pieces of media were accurately represented.</p>
+        </RedBarLeft>
+        <YellowBarRight Title="Prototyping">
+            <p class="indented-text" slot="text">Once the database design was complete, I used Figma to create visually pleasing landing page and interaction menu for users to navigate and interact with the database effectively.</p>
+            <img src={EpicTaleImage3.src} class="video-wrapper right" alt="Figma Prototype of Epic Tale Database" slot="content"/>
+        </YellowBarRight>
+        <ColumnBar>
+            <h4 class="black small centered" slot="title1">Where I Succeeded</h4>
+            <p class="centered" slot="text1">I successfully created a functional and visually appealing database system that met the requirements of the assignment, while learning extensively about relational database design and implementation.</p>
+            <h4 slot="title2" class="black small centered">Where I Can Improve</h4>
+            <p slot="text2" class="centered">I plan to continue exploring not only ruby on rails but other sql database technologies to enhance my skills in database design and management.</p>
+            <a href="https://github.com/TheBenchwarmerss/Epic_Tale" slot="link">
+                <u class="black">View the GitHub Repository</u>
+            </a>
+        </ColumnBar>
+    </main> 
+</ProjectLayout>

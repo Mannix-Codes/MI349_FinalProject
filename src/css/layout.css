@@ -193,7 +193,7 @@ footer {
 }
 
 .project-itemE {
-    background-image: url(/public/figmaprototype.png);
+    background-image: url(/EpicTaleImage3.png);
     background-position: center;
     background-size: cover;
     grid-column-start: third;
@@ -204,7 +204,7 @@ footer {
 }
 
 .project-itemF {
-    background-image: url(/public/LSSphoto.png);
+    background-image: url(/LSSphoto.png);
     background-position: center;
     background-size: cover;
     grid-column-start: fifth;
